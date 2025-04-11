@@ -1,0 +1,30 @@
+/*
+balise : p, div, 
+classe : .nom-classe
+id: #nom-id
+
+
+*/
+
+p {
+    color: blue;
+    margin: 5px;
+}
+
+.important {
+    color: red;
+    margin: 5px;
+}
+
+#vert-souligne {
+    color: green;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.conteneur {
+    padding: 10px;
+    background-color: #e1cdcd;
+}
+
+
