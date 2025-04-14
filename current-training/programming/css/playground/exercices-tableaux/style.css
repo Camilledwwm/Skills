@@ -1,0 +1,45 @@
+/* border-collapse : collapse = fusionne les bordures adjacentes */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 2%;
+}
+
+body {
+    margin-top: 3%;
+}
+
+caption:hover {
+    background-color: rgb(234, 199, 220);
+}
+
+h2 {
+    border: 1px solid #ddd;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    
+}
+
+th {
+    background-color: rgb(145, 135, 199);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#tablettes {
+    background-color: rgb(214, 229, 243);
+}
