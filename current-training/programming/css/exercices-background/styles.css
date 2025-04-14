@@ -1,0 +1,47 @@
+body {
+    background: url(https://i.pinimg.com/736x/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+div {
+    margin-bottom: 3%;
+}
+
+#titre {
+    text-align: center;
+    margin-top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-decoration: underline overline #de95c8;
+    color: bisque;
+}
+
+.paragraphe {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 90%;
+    font-style: italic;
+    color: #4b044e;
+}
+
+#image-arbre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#bas-de-page {
+    color: rgb(32, 2, 35);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 75%;
+    margin: 10px;
+    margin-top: 20px;
+    border-top: 1px solid rgb(225, 151, 200);
+    padding-top: 20px;
+    width:99%;
+}

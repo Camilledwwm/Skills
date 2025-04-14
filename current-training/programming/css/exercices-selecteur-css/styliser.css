@@ -26,13 +26,12 @@ p {
 padding-left : espace entre la barre et le texte
 */
 #barre-gauche {
-
     border-left: 4px solid rgb(218, 214, 214);
     padding-left: 20px;
     min-height: 40px;
     font-style: italic;
     margin-left: 20px;
-
+    margin-top: 30px;
 }
 
 #titre-deux {
