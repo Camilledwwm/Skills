@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice tableau medium</title>
+</head>
+
+<body>
+    <table>
+        <caption>
+            <h1>Rapport des ventes par région</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>Région</th>
+                <th>Produit</th>
+                <th>Chiffre d'affaires</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" class="region"><strong>Europe</strong></td>
+                <td>Ordinateurs</td>
+                <td>85 000 €</td>
+            </tr>
+            <tr class="region">
+                <td>Smartphones</td>
+                <td>92 500 €</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="region"><strong>Amérique</strong></td>
+                <td>Ordinateurs</td>
+                <td>112 000 €</td>
+            </tr>
+            <tr class="region">
+                <td>Smartphones</td>
+                <td>143 800€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" id="total"><strong>Total</strong></td>
+                <td id="resultat"><strong>433 300 €</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
