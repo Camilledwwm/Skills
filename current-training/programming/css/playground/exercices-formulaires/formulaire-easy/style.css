@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: rgb(196, 246, 251);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+form {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ligne {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.titre {
+    font-weight: bold;
+    font-size: small;
+}
+
+#btn-envoyer {
+    margin-top: 15px;
+    background-color: rgb(58, 213, 58);
+    border-radius: 3px;
+    border: 0;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}

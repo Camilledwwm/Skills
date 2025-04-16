@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice formulaire easy</title>
+</head>
+
+<body>
+    <form action="/submit-form" method="post">
+
+        <header>
+            <h1>Contactez-nous</h1>
+        </header>
+        <main>
+            <div class="ligne">
+                <label class="titre" for="username">Nom</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="ligne">
+                <label class="titre" for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="ligne">
+                <label class="titre" for="subject">Sujet</label>
+                <select id="subject" name="subject">
+                    <option value="">Demande d'informations</option>
+                    <option value="">Demande 2</option>
+                    <option value="">Demande 3</option>
+                </select>
+            </div>
+            <div class="ligne">
+                <label class="titre" for="message">Message</label>
+                <textarea id="message" name="message" rows="4" cols="50">
+            </textarea>
+            </div>
+
+        </main>
+        <footer>
+            <div>
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">J'accepte les conditions d'utilisation</label>
+            </div>
+            <div>
+                <button id="btn-envoyer" type="submit">Envoyer</button>
+            </div>
+        </footer>
+    </form>
+</body>
