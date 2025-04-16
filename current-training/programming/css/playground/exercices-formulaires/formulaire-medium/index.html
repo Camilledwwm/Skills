@@ -13,50 +13,50 @@
     <form action="/submit-form" method="post">
 
         <head>
-            <h1>Créer un compte</h1>
+            <h2>Créer un compte</h2>
         </head>
         <main>
-            <div>
-                <label for="firstname">Prénom</label>
+            <div class="ligne">
+                <label class="titre" for="firstname">Prénom</label>
                 <input type="text" id="firstname" name="firstname" required>
             </div>
-            <div>
-                <label for="lastname">Nom</label>
+            <div class="ligne">
+                <label class="titre" for="lastname">Nom</label>
                 <input type="text" id="lastname" name="lastname" required>
             </div>
-            <div>
-                <label for="email">Email</label>
+            <div class="ligne">
+                <label class="titre" for="email">Email</label>
                 <input type="text" id="email" name="email" required>
             </div>
-            <div>
-                <label for="password">Mot de passe</label>
+            <div class="ligne">
+                <label class="titre" for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" required>
                 <p>
                     Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre
                 </p>
             </div>
-            <div>
-                <label for="confirm-password">Confirmer le mot de passe</label>
+            <div class="ligne">
+                <label class="titre" for="confirm-password">Confirmer le mot de passe</label>
                 <input type="password" id="password" name="confirm-password" required>
             </div>
-            <div>
-                <label for="birthday">Date de naissance</label>
+            <div class="ligne">
+                <label class="titre" for="birthday">Date de naissance</label>
                 <input type="date" id="birthday" name="birthday">
             </div>
             <div>
-                <label for="gender">Genre</label>
+                <label class="ligne" for="gender">Genre</label>
 
-                <input type="radio" id="man" name="man">
-                <label for="man">Homme</label>
+                <input type="radio" id="male" name="male">
+                <label for="male">Homme</label>
 
-                <input type="radio" id="woman" name="woman">
-                <label for="woman">Femme</label>
+                <input type="radio" id="female" name="female">
+                <label for="female">Femme</label>
 
                 <input type="radio" id="other" name="other">
                 <label for="other">Autre</label>
             </div>
-            <div>
-                <label for="country">Pays</label>
+            <div class="ligne">
+                <label class="titre" for="country">Pays</label>
                 <select id="country" name="country">
                     <option value="">Sélectionnez votre pays</option>
                     <option value="fr">France</option>
@@ -80,8 +80,8 @@
                 <label for="newsletter">Je souhaite recevoir la newsletter</label>
             </div>
             <div>
-                <button type="reset">Réinitialiser</button>
-                <button type="submit">S'inscrire</button>
+                <button id="btn-reset" type="reset">Réinitialiser</button>
+                <button id="btn-submit" type="submit">S'inscrire</button>
             </div>
         </footer>
     </form>
