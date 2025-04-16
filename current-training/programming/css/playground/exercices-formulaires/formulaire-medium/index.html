@@ -11,6 +11,7 @@
 
 <body>
     <form action="/submit-form" method="post">
+
         <head>
             <h1>Créer un compte</h1>
         </head>
@@ -31,7 +32,7 @@
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" required>
                 <p>
-                    Le mot de passe doit contenir au moins 8 caractèresn une majuscule, une minuscule et un chiffre
+                    Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre
                 </p>
             </div>
             <div>
@@ -42,11 +43,46 @@
                 <label for="birthday">Date de naissance</label>
                 <input type="date" id="birthday" name="birthday">
             </div>
-            <fieldset>
             <div>
-                
+                <label for="gender">Genre</label>
+
+                <input type="radio" id="man" name="man">
+                <label for="man">Homme</label>
+
+                <input type="radio" id="woman" name="woman">
+                <label for="woman">Femme</label>
+
+                <input type="radio" id="other" name="other">
+                <label for="other">Autre</label>
             </div>
-            </fieldset>
+            <div>
+                <label for="country">Pays</label>
+                <select id="country" name="country">
+                    <option value="">Sélectionnez votre pays</option>
+                    <option value="fr">France</option>
+                    <option value="be">Belgique</option>
+                    <option value="ca">Canada</option>
+                    <option value="es">Espagne</option>
+                </select>
+            </div>
         </main>
+        <footer>
+            <div>
+                <input type="checkbox" id="conditions" name="conditions">
+                <label for="conditions">J'accepte les
+                    <a href="https://www.facebook.com">conditions d'utilisation</a>
+                    et la
+                    <a href="https://www.instagram.com">politique de confidentialité</a>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" checked>
+                <label for="newsletter">Je souhaite recevoir la newsletter</label>
+            </div>
+            <div>
+                <button type="reset">Réinitialiser</button>
+                <button type="submit">S'inscrire</button>
+            </div>
+        </footer>
     </form>
 </body>
