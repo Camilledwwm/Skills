@@ -22,7 +22,6 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .first-group {
     padding-bottom: 8px;
     display: flex;
@@ -37,6 +36,11 @@ form {
 p {
     font-size: small;
     color: rgb(115, 115, 116);
+}
+
+fieldset {
+    border: 0px;
+    padding-left: 0px;
 }
 
 select {

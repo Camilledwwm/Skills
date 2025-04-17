@@ -11,7 +11,6 @@
 
 <body>
     <form action="/submit-form" method="post">
-
         <header>
             <h2>Créer un compte</h2>
         </header>
@@ -43,10 +42,10 @@
                 <label class="titre" for="birthday">Date de naissance</label>
                 <input type="date" id="birthday" name="birthday">
             </div>
-            <div>
-                <label class="titre" for="gender">Genre</label>
-            </div>
             <div class="group-form">
+            <fieldset>
+                <legend class="titre">Genre</legend>
+            
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Homme</label>
 
@@ -54,7 +53,8 @@
                 <label for="female">Femme</label>
 
                 <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Autre</label>
+                <label for="other">Autre</label>      
+            </fieldset>
             </div>
             <div class="first-group">
                 <label class="titre" for="country">Pays</label>
@@ -87,3 +87,4 @@
         </footer>
     </form>
 </body>
+</html>
