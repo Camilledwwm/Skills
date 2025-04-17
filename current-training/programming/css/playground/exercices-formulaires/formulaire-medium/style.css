@@ -22,11 +22,9 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-div {
-    padding-bottom: 8px;
-}
 
-.ligne {
+.first-group {
+    padding-bottom: 8px;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
@@ -39,6 +37,15 @@ div {
 p {
     font-size: small;
     color: rgb(115, 115, 116);
+}
+
+.group-form {
+    padding-bottom: 8px;
+}
+
+
+.btn {
+    padding-top: 20px;
 }
 
 #btn-reset {
@@ -57,7 +64,10 @@ p {
     color: white;
     border-radius: 3px;
     border: 0;
-    padding: 5px 10px 5px 10px;
+    padding-top: 5px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 5px;
     cursor: pointer;
     font-weight: bold;
 }

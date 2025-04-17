@@ -12,53 +12,54 @@
 <body>
     <form action="/submit-form" method="post">
 
-        <head>
+        <header>
             <h2>Créer un compte</h2>
-        </head>
+        </header>
         <main>
-            <div class="ligne">
+            <div class="first-group">
                 <label class="titre" for="firstname">Prénom</label>
                 <input type="text" id="firstname" name="firstname" required>
             </div>
-            <div class="ligne">
+            <div class="first-group">
                 <label class="titre" for="lastname">Nom</label>
                 <input type="text" id="lastname" name="lastname" required>
             </div>
-            <div class="ligne">
+            <div class="first-group">
                 <label class="titre" for="email">Email</label>
                 <input type="text" id="email" name="email" required>
             </div>
-            <div class="ligne">
+            <div class="first-group">
                 <label class="titre" for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" required>
                 <p>
                     Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre
                 </p>
             </div>
-            <div class="ligne">
+            <div class="first-group">
                 <label class="titre" for="confirm-password">Confirmer le mot de passe</label>
-                <input type="password" id="password" name="confirm-password" required>
+                <input type="password" id="confirm-password" name="confirm-password" required>
             </div>
-            <div class="ligne">
+            <div class="first-group">
                 <label class="titre" for="birthday">Date de naissance</label>
                 <input type="date" id="birthday" name="birthday">
             </div>
             <div>
-                <label class="ligne" for="gender">Genre</label>
-
-                <input type="radio" id="male" name="male">
+                <label class="titre">Genre</label>
+            </div>
+            <div class="group-form">
+                <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Homme</label>
 
-                <input type="radio" id="female" name="female">
+                <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Femme</label>
 
-                <input type="radio" id="other" name="other">
+                <input type="radio" id="other" name="gender" value="other">
                 <label for="other">Autre</label>
             </div>
-            <div class="ligne">
+            <div class="first-group">
                 <label class="titre" for="country">Pays</label>
                 <select id="country" name="country">
-                    <option value="">Sélectionnez votre pays</option>
+                    <option>Sélectionnez votre pays</option>
                     <option value="fr">France</option>
                     <option value="be">Belgique</option>
                     <option value="ca">Canada</option>
@@ -66,8 +67,8 @@
                 </select>
             </div>
         </main>
-        <footer>
-            <div>
+        <footer class="group-form">
+            <div class="btn">
                 <input type="checkbox" id="conditions" name="conditions">
                 <label for="conditions">J'accepte les
                     <a href="https://www.facebook.com">conditions d'utilisation</a>
@@ -79,7 +80,7 @@
                 <input type="checkbox" id="newsletter" name="newsletter" checked>
                 <label for="newsletter">Je souhaite recevoir la newsletter</label>
             </div>
-            <div>
+            <div class="btn">
                 <button id="btn-reset" type="reset">Réinitialiser</button>
                 <button id="btn-submit" type="submit">S'inscrire</button>
             </div>
