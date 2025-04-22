@@ -5,6 +5,8 @@
     height: 80px;
     align-items: center;
     background-color: rgb(221, 233, 249);
+    padding-left: 130px;
+    padding-right: 130px;
 }
 
 #logo-style {
@@ -12,7 +14,6 @@
 }
 
 img {
-    padding-left: 130px;
     height: 30px;
 }
 
@@ -23,7 +24,6 @@ h2 {
 }
 
 nav {
-    padding-right: 130px;
     color: rgb(84, 49, 101);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
