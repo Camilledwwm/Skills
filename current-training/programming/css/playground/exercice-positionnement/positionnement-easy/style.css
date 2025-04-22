@@ -2,14 +2,24 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    height: 60px;
+    height: 80px;
     align-items: center;
     background-color: rgb(221, 233, 249);
 }
 
-h2 {
+#logo-style {
+    display: flex;
     float: left;
+    
+}
+
+img {
     padding-left: 130px;
+    height: 30px;
+}
+
+h2 {
+    padding-left: 5px;
     color: rgb(84, 49, 101);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
