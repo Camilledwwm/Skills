@@ -1,11 +1,17 @@
 body {
+    display: grid;
     width: 1650px;
-    margin-left: 10px;
+    height: 1400px;
+    justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 60px 1fr 250px;
 }
 
+/* Début header */
 header {
-    display: flex;
+    grid-column: 1 / 4;
+    grid-row: 1;
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -21,18 +27,39 @@ img {
     color: white;
     padding-left: 5px;
 }
+/* Fin header */
 
+/* Début nav */
 nav {
     background: rgb(242, 230, 230);
-    padding-top: 30px;
-}
-
-ul {
-    list-style: none;
-    font-size: small;
+    padding-top: 50px;
 }
 
 a {
     text-decoration: none;
     color: rgb(61, 58, 58);
 }
+/* Fin nav */
+
+/* Début main */
+main {
+    grid-column: 2;
+    grid-row: 2;
+}
+/* Fin main */
+
+/* Début sidebar */
+#sidebar {
+    grid-column: 3;
+    grid-row: 2;
+    background: rgb(241, 233, 233)
+}
+/* Fin sidebar */
+
+/* Début footer */
+footer {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background: rgb(58, 77, 111);
+}
+/* Fin footer */
