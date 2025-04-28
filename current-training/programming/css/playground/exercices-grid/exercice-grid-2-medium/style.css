@@ -1,19 +1,24 @@
 body {
     display: grid;
-    width: 1650px;
-    height: 1350px;
+    width: 100%;
+    min-height: 100vh;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     grid-template-columns: 250px 1fr 250px;
     grid-template-rows: 70px 1fr 250px;
+    grid-template-areas: 
+    'header header header'
+    'nav main sidebar'
+    'footer footer footer';
 }
 
 p {
     font-size: small;
 }
 
-/* Début header */
+/* ----- HEADER ----- */
 header {
+    grid-area: header;
     display: flex;
     grid-column: 1 / 4;
     grid-row: 1;
@@ -32,17 +37,19 @@ header img {
     color: white;
     padding-left: 5px;
 }
-/* Fin header */
+/* ----- HEADER ----- */
 
-/* Début nav */
+/* ----- NAV ----- */
 nav {
+    display: flex;
+    flex-direction: column;
+    grid-area: nav;
+    width: 100%;
     background: rgb(242, 230, 230);
     padding-top: 70px;
 }
 
 nav a {
-    display: flex;
-    text-align: left;
     text-decoration: none;
     color: rgb(61, 58, 58);
     font-size: small;
@@ -59,10 +66,11 @@ nav a:hover {
     background-color: rgb(81, 212, 170);
     color: white;
 }
-/* Fin nav */
+/* ----- NAV ----- */
 
-/* Début main */
+/* ----- MAIN ----- */
 main {
+    grid-area: main;
     grid-column: 2;
     grid-row: 2;
     text-align: left;
@@ -101,9 +109,12 @@ main section {
     margin-bottom: 30px;
 }
 
+#bouton {
+    display: flex;
+    justify-content: center;
+} 
 
 main button {
-    margin-left: 250px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
@@ -121,10 +132,11 @@ main button:hover {
     color: black;
 }
 
-/* Fin main */
+/* ----- MAIN ----- */
 
-/* Début sidebar */
+/* ----- SIDEBAR ----- */
 #sidebar {
+    grid-area: sidebar;
     width: 100%;
     grid-column: 3;
     grid-row: 2;
@@ -208,10 +220,12 @@ input {
     border: solid 1px rgb(71, 71, 71);
     border-radius: 4px;
 }
-/* Fin sidebar */
+/* ----- SIDEBAR ----- */
 
-/* Début footer */
+/* ----- FOOTER ----- */
 footer {
+    grid-area: footer;
+    width: 100%;
     grid-column: 1 / 4;
     grid-row: 3;
     background: rgb(58, 77, 111);
@@ -263,6 +277,7 @@ footer a {
     text-align: center;
     color: grey;
 }
+/* ----- FOOTER ----- */
 
+/* ----- MEDIA QUERIES ----- */
 
-/* Fin footer */
