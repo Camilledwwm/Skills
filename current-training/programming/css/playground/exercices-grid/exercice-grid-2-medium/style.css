@@ -427,7 +427,7 @@ footer a {
     }
 
     footer {
-        padding: 0;
+        padding: 1rem;
         grid-column: 1 / 5;
         grid-row: 15 / 17;
     }
@@ -449,8 +449,6 @@ footer a {
 
     #footer-end {
         padding-bottom: 0.6rem;
-        margin-left: 1.4rem;
-        margin-right: 1.9rem;
     }
 }
 /* ----- MEDIA QUERIES ----- */
