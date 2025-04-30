@@ -22,6 +22,7 @@ main {
 }
 
 #btn-primary {
+    margin-right: 15px;
     color: white;
     font-weight: bold;
     background-color: rgb(101, 48, 150);
@@ -32,6 +33,7 @@ main {
 }
 
 #btn-secondary {
+    margin-right: 15px;
     color: white;
     font-weight: bold;
     background-color: rgb(164, 46, 160);
