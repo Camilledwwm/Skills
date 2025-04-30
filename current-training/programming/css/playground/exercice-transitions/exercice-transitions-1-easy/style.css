@@ -1,0 +1,59 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* ----- HEADER -----  */
+header {
+    margin-bottom: 40px;
+}
+/* ----- HEADER -----  */
+
+/* ----- MAIN -----  */
+main {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-primary {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(101, 48, 150);
+    border-color: rgb(101, 48, 150);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btn-secondary {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(164, 46, 160);
+    border-color: rgb(164, 46, 160);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: wait;
+}
+
+#btn-danger {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(205, 55, 85);
+    border-color: rgb(205, 55, 85);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: not-allowed;
+}
+/* ----- MAIN -----  */
+
+/* ----- FOOTER -----  */
+footer p {
+    font-style: italic;
+}
+/* ----- FOOTER -----  */
