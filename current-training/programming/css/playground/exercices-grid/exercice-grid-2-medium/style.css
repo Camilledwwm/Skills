@@ -44,6 +44,7 @@ nav {
     width: 100%;
     background: rgb(242, 230, 230);
     padding-top: 4rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 nav a {
@@ -112,7 +113,7 @@ main p {
     
 }
 
-#bouton {
+#btn {
     display: flex;
     justify-content: center;
 } 
@@ -147,6 +148,7 @@ main button:hover {
     padding-left: 1.6rem;
     padding-right: 1.6rem;
     padding-top: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 #sidebar div {
@@ -243,20 +245,24 @@ footer section {
     flex-wrap: wrap;
     text-align: left;
     justify-content: start;
-    gap: 13.2rem;
+    gap: 5.5rem;
     margin-left: 1.5rem;
+}
+
+footer section div {
+    width: 20%;
 }
 
 #footer-marque {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1.6rem;
 }
 
 footer h4 {
     color: white;
     font-size: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 0.6rem;
 }
 
@@ -268,13 +274,13 @@ footer a {
     display: block;
     text-decoration: none;
     font-size: 0.8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.6rem;
 }
 
 #footer-end {
     margin-left: 2rem;
     margin-right: 2rem;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     border-top: 1px solid grey;
     padding-top: 1rem;
     text-align: center;
@@ -299,7 +305,7 @@ footer a {
         flex-direction: row;
         justify-content: space-around;
         padding: 0;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
 
     nav a {
@@ -309,7 +315,6 @@ footer a {
         margin-bottom: 1rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
-
     }
 
     nav a:hover {
@@ -353,6 +358,10 @@ footer a {
         margin-left: 0;
         justify-content: space-around;
         gap: 1rem;
+    }
+
+    #footer-end {
+        margin-top: 0.6rem;
     }
 }
 /* ----- MEDIA QUERIES TABLETTE ----- */
