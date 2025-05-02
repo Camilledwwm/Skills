@@ -1,0 +1,172 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    max-width: 100vw;
+}
+
+/* ----- HEADER / NAV ----- */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav, .logo {
+    padding: 1em 1em 1em 1em;
+}
+
+header nav .logo {
+    object-fit: contain;
+    height: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+a {
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding-right: 1.5em;
+}
+/* ----- HEADER / NAV ----- */
+
+/* ----- MAIN ----- */
+
+main div {
+    text-align: center;
+    
+}
+
+.background-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616107485069454/background1.jpg?ex=68153b41&is=6813e9c1&hm=8ee2d9fdd1e8ce7bd202d409e13dd69e3ef48d8fff3de595623931cc675d80ee&=&format=webp&width=1536&height=864);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1em; 
+}
+
+.background-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616104016515172/background2.jpg?ex=68153b40&is=6813e9c0&hm=b8442f3c17d0eac2f602182f5e898abdf81d557bcd8dc40c8617aba1c7f2a5c2&=&format=webp&width=1536&height=864);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 1em;
+}
+   
+.gallery {
+    min-height: 100vh;
+    display: grid;
+    gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item5 item6";
+}
+
+.gallery-item1 {
+    grid-area: item1;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616104536477798/image1.jpg?ex=68153b40&is=6813e9c0&hm=f385f3364176cf092f37e4b4fba5d8f9b7f1fd7b89c9067b6a4dc1dcc470a8ed&=&format=webp&width=1536&height=864);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.gallery-item2 {
+    grid-area: item2;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616105052504085/image2.jpg?ex=68153b40&is=6813e9c0&hm=c10c2669f71b4f2ad9773529d7ff705dc0946968a4cf462a86566f62830c58d3&=&format=webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-item3 {
+    grid-area: item3;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616105404829726/image3.jpg?ex=68153b40&is=6813e9c0&hm=0850255717563f74693016465773605d2cc790afec11f4908c546107acff289b&=&format=webp&width=1785&height=657);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-item4 {
+    grid-area: item4;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616105815998607/image4.jpg?ex=68153b40&is=6813e9c0&hm=def26c9ce34a4715c0f49bcf017cbfdeb2185ed869f87d74eca0a67ea0f87087&=&format=webp&width=1536&height=864);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-item5 {
+    grid-area: item5;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616106424176701/image5.jpg?ex=68153b40&is=6813e9c0&hm=93dab7588059569840d4a6954d5b193d6bca477d1fd9889ee66f0541b3a7a657&=&format=webp&width=1536&height=864);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gallery-item6 {
+    grid-area: item6;
+    background-image: url(https://media.discordapp.net/attachments/1359656791461597425/1367616106801397770/image6.jpg?ex=68153b40&is=6813e9c0&hm=a87068978526485e066cd47c208bc566cb46ff40a581df1ff7b113d0ccd9efa4&=&format=webp&width=1536&height=864);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* ----- MAIN ----- */
+
+/* ----- FOOTER ----- */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+.bold-title {
+    font-weight: bold;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+/* ----- FOOTER ----- */
+
+/* ----- MEDIA QUERIES TABLET ----- */
+/* ----- MEDIA QUERIES TABLET ----- */
+
+/* ----- MEDIA QUERIES MOBILE ----- */
+/* ----- MEDIA QUERIES MOBILE ----- */
