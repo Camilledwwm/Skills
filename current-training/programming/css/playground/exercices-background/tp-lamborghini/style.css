@@ -185,40 +185,40 @@ main p {
     max-height: 100vh;
     display: grid;
     grid-template-areas: 
-    "item1 item2 item3 item4 item5"
-    "item6 item7";
+    "content1 content2 content3 content4 content5"
+    "content6 content7";
     gap: 3em;
     background-color: black;
     color: white;
     font-size: 0.8em;
 }
 
-.footer-item1 {
-    grid-area: item1;
+.footer-content1 {
+    grid-area: content1;
 }
 
-.footer-item2 {
-    grid-area: item2;
+.footer-content2 {
+    grid-area: content2;
 }
 
-.footer-item3 {
-    grid-area: item3;
+.footer-content3 {
+    grid-area: content3;
 }
 
-.footer-item4 {
-    grid-area: item4;
+.footer-content4 {
+    grid-area: content4;
 }
 
-.footer-item5 {
-    grid-area: item5;
+.footer-content5 {
+    grid-area: content5;
 }
 
-.footer-item6 {
-    grid-area: item6;
+.footer-content6 {
+    grid-area: content6;
 }
 
-.footer-item7 {
-    grid-area: item7;
+.footer-content7 {
+    grid-area: content7;
 }
 
 footer p {
