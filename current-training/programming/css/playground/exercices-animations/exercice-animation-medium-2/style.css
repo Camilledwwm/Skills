@@ -1,0 +1,89 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dcd1d9;
+}
+
+h1 {
+  color: #554668;
+}
+
+section {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 50px;
+}
+
+.card {
+  border-radius: 6px;
+  box-shadow: 0px 0px 15px #554668;
+  animation: slide 1s linear forwards;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 1.2s;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.image {
+  display: block;
+  width: 350px;
+  height: 200px;
+  background-image: url(https://st4.depositphotos.com/36741118/39552/i/450/depositphotos_395526676-stock-photo-tarot-card-table-white-magic.jpg);
+}
+
+.image:hover {
+  transform: scale(1.5);
+}
+
+.text {
+  display: block;
+  background-color: #f6d3ec;
+  padding: 15px;
+}
+
+h2 {
+  color: #322740;
+  padding-bottom: 15px;
+}
+
+p {
+  color: rgba(0, 0, 0, 0.59);
+  padding-bottom: 20px;
+}
+
+button {
+  border-radius: 50px;
+  background-color: #554668;
+  border-color: #554668;
+}
+
+.btn-text {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
