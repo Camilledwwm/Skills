@@ -62,3 +62,7 @@ h5,
 h6 {
   text-wrap: balance;
 }
+
+ul {
+  padding: 0%;
+}

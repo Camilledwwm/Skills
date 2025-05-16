@@ -1,0 +1,140 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* ----- HEADER ----- */
+header {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 300px;
+  padding-right: 300px;
+  background-image: url(Images/bg_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+header h1 {
+    font-size: 64px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.header-nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-content {
+    text-align: right;
+}
+
+.header-btn {
+  display: flex;
+  gap: 5px;
+  background-color: #c9a47e;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.btn-text {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.header-btn img {
+  height: 20px;
+}
+/* ----- HEADER ----- */
+
+/* ----- MAIN ----- */
+main {
+  padding-left: 300px;
+  padding-right: 300px;
+  background-color: #606060;
+}
+
+.about-hall h1,
+.about-projects h1,
+.about-services h1 {
+  text-transform: uppercase;
+  font-size: 42px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.about-hall,
+.about-services {
+  background-color: #272727;
+}
+
+.about-hall,
+.about-projects,
+.about-services {
+  padding: 30px 100px;
+}
+
+.about-projects {
+  background-color: #c9a47e;
+}
+
+/* ----- MAIN ----- */
+
+/* ----- FOOTER ----- */
+footer {
+  height: 495px;
+  background-image: url(Images/bg_footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-content {
+  background-image: url(Images/visuelgauche.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+/* ----- FOOTER ----- */

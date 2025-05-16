@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.port": 5501
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode"
 }
