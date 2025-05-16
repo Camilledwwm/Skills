@@ -22,9 +22,9 @@ header {
 }
 
 header h1 {
-    font-size: 64px;
-    font-weight: 100;
-    text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 .header-nav {
@@ -54,7 +54,7 @@ a {
 }
 
 .text-content {
-    text-align: right;
+  text-align: right;
 }
 
 .header-btn {
@@ -83,11 +83,47 @@ main {
   background-color: #606060;
 }
 
+.section-content {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+h4 {
+  color: white;
+  font-weight: 500;
+}
+
+.text-style {
+  color: #c7c7c7;
+  font-weight: 200;
+  font-size: 14px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.text-style-gold {
+  color: #c9a47e;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.mid-text-content {
+  border-left: 4px solid #c9a47e;
+  padding-left: 60px;
+}
+
+.about-hall span,
+.about-projects span,
+.about-services span {
+  color: white;
+}
+
 .about-hall h1,
 .about-projects h1,
 .about-services h1 {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 36px;
   text-align: center;
   padding-bottom: 30px;
 }
@@ -95,6 +131,7 @@ main {
 .about-hall,
 .about-services {
   background-color: #272727;
+  color: #c9a47e;
 }
 
 .about-hall,
@@ -107,6 +144,9 @@ main {
   background-color: #c9a47e;
 }
 
+.about-projects h1 {
+  color: #272727;
+}
 /* ----- MAIN ----- */
 
 /* ----- FOOTER ----- */
@@ -121,10 +161,9 @@ footer {
 }
 
 .footer-content {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-content {
@@ -137,4 +176,17 @@ footer {
   font-size: 24px;
 }
 
+.right-content {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer button {
+  background-color: #c9a47e;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 /* ----- FOOTER ----- */
