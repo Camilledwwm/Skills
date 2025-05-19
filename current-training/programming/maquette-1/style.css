@@ -185,7 +185,8 @@ h4 {
   height: 295px;
 }
 
-.projects-section-content {
+.projects-section-content,
+.services-section-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,6 +247,13 @@ h4 {
   font-weight: bold;
   line-height: 17px;
 }
+
+.services-left-content,
+.services-middle-content {
+  width: 290px;
+  height: 434px;
+}
+
 
 /* ----- MAIN ----- */
 
