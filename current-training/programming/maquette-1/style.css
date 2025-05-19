@@ -1,5 +1,8 @@
 body {
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100vw;
   min-height: 100vh;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -8,8 +11,8 @@ body {
 
 /* ----- HEADER ----- */
 header {
-  width: 100%;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   padding-left: 300px;
@@ -19,12 +22,6 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-}
-
-header h1 {
-  font-size: 64px;
-  font-weight: 100;
-  text-transform: uppercase;
 }
 
 .header-nav {
@@ -53,12 +50,40 @@ a {
   text-transform: uppercase;
 }
 
+.header-content {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.header-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
 .text-content {
   text-align: right;
 }
 
+header h1 {
+  font-size: 64px;
+  font-weight: 100;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+header p {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
 .header-btn {
+  width: fit-content;
   display: flex;
+  justify-content: right;
   gap: 5px;
   background-color: #c9a47e;
   border-radius: 50px;
@@ -78,13 +103,15 @@ a {
 
 /* ----- MAIN ----- */
 main {
-  padding-left: 300px;
-  padding-right: 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #606060;
 }
 
 .section-content {
-  width: 100%;
+  width: 75%;
   display: flex;
   gap: 30px;
 }
@@ -125,7 +152,6 @@ h4 {
   text-transform: uppercase;
   font-size: 36px;
   text-align: center;
-  padding-bottom: 30px;
 }
 
 .about-hall,
@@ -137,6 +163,8 @@ h4 {
 .about-hall,
 .about-projects,
 .about-services {
+  width: 70%;
+  justify-content: center;
   padding: 30px 100px;
 }
 
@@ -147,26 +175,105 @@ h4 {
 .about-projects h1 {
   color: #272727;
 }
+
+.content-image {
+  align-content: center;
+}
+
+.content-image img {
+  width: 220px;
+  height: 295px;
+}
+
+.projects-section-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.first-flyer {
+  width: 290px;
+  height: 434px;
+  background-image: url(Images/paris.jpg);
+  background-size: cover;
+  padding: 32px;
+}
+
+.second-flyer {
+  width: 290px;
+  height: 434px;
+  background-image: url(Images/london.jpg);
+  background-size: cover;
+  padding: 32px;
+}
+
+.projects-section-text {
+  height: 434px;
+}
+
+.projects-section-text img {
+  padding-bottom: 64px;
+}
+
+.title-style {
+  color: #c9a47e;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.title-second-style {
+  color: #272727;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+
+.date {
+  width: fit-content;
+  padding: 5px;
+  background-color: #272727;
+  border-radius: 2px;
+}
+
+.about-projects h3 {
+  color: white;
+  font-weight: 300;
+}
+
+.about-projects p {
+  font-weight: bold;
+  line-height: 17px;
+}
+
 /* ----- MAIN ----- */
 
 /* ----- FOOTER ----- */
 footer {
-  height: 495px;
+  width: 100%;
+  height: auto;
   background-image: url(Images/bg_footer.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .footer-content {
+  width: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .left-content {
+  width: 350px;
+  height: 313px;
   background-image: url(Images/visuelgauche.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -174,10 +281,16 @@ footer {
   color: white;
   text-transform: uppercase;
   font-size: 24px;
+  padding: 32px;
 }
 
 .right-content {
-  background-color: rgba(0, 0, 0, 0.4);
+  width: 350px;
+  height: 313px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 32px;
 }
 
 footer button {
@@ -189,4 +302,5 @@ footer button {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 /* ----- FOOTER ----- */
