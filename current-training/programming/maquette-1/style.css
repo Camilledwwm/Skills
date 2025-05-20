@@ -1,3 +1,7 @@
+:root {
+  --container-width: 1200px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -25,6 +29,7 @@ header {
 }
 
 .header-nav {
+  max-width: var(--container-width);
   height: 70px;
   display: flex;
   flex-wrap: wrap;
@@ -33,33 +38,64 @@ header {
 }
 
 .nav-menu {
+  width: var(--container-width);
+}
+
+.nav-list {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 250px;
+  gap: 24px;
+}
+.link-container {
+  flex: 1;
 }
 
-.nav-left {
-  justify-content: end;
-}
-
-.nav-right {
-  justify-content: flex-start;
-}
-
-ul {
-  display: flex;
+.logo-container {
+  flex-basis: 300px;
 }
 
 li {
   list-style: none;
 }
 
-.link {
-  padding: 24px;
-  display: block;
-
-  text-align: center;
+.link:hover {
+  color: #c9a47e;
 }
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin-top: 10px;
+  background-color: #c9a47e;
+  transform: scale(0);
+  transition: width 0.7s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.link:hover::after {
+  transform: scale(1);
+  width: 100%;
+}
+
+.link {
+  padding: 12px 24px;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.link-home {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -67,7 +103,7 @@ a {
 }
 
 .header-content {
-  width: 1165.5px;
+  width: var(--container-width);
   padding-top: 128px;
   padding-bottom: 128px;
 }
@@ -76,8 +112,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
-  padding-right: 64px;
+  padding-right: 32px;
 }
 
 .text-content {
@@ -104,12 +139,19 @@ header p {
   border-radius: 50px;
   padding: 5px 10px;
   gap: 5px;
-}
-
-.btn-text {
   text-transform: uppercase;
   font-weight: bold;
   color: white;
+}
+
+.header-btn:hover {
+  background-color: #606060;
+  font-style: italic;
+  color: #c9a47e;
+}
+
+.header-btn:hover .btn-text {
+  color: #c9a47e;
 }
 
 .header-btn img {
@@ -185,7 +227,7 @@ h4 {
 .about-hall,
 .about-projects,
 .about-services {
-  max-width: 1200px;
+  max-width: var(--container-width);
   margin: 0 auto;
   justify-content: center;
   padding: 30px 100px;
@@ -317,6 +359,18 @@ h4 {
   padding-right: 10px;
 }
 
+.services-left-content button:hover {
+  background-color: #c9a47e;
+  color: #c7c7c7;
+  font-style: italic;
+}
+
+.services-middle-content button:hover {
+  background-color: #606060;
+  color: #c9a47e;
+  font-style: italic;
+}
+
 .services-middle-content button {
   background-color: #c9a47e;
   color: white;
@@ -389,8 +443,26 @@ footer {
   height: 313px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 32px;
+}
+
+footer input,
+footer textarea {
+  min-width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  color: #c7c7c7;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid white;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #c7c7c7;
 }
 
 footer button {
@@ -401,6 +473,12 @@ footer button {
   font-weight: bold;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+footer button:hover {
+  background-color: #272727;
+  color: #c9a47e;
+  font-style: italic;
 }
 
 /* ----- FOOTER ----- */

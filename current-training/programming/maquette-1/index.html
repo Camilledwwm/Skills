@@ -15,19 +15,23 @@
   <body>
     <header>
       <section class="header-nav">
-        <nav class="nav-menu nav-left">
-          <ul>
-            <li><a class="link" href="home">Home</a></li>
-            <li><a class="link" href="about">About</a></li>
-          </ul>
-        </nav>
-
-        <img src="Images/logo_header.png" alt="the-hall" />
-
-        <nav class="nav-menu nav-right">
-          <ul>
-            <li><a class="link" href="projects">Projects</a></li>
-            <li><a class="link" href="contacts">Contacts</a></li>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="link-container"><a class="link" href="home">Home</a></li>
+            <li class="link-container">
+              <a class="link" href="about">About</a>
+            </li>
+            <li class="logo-container">
+              <a class="link-home" href="#">
+                <img src="Images/logo_header.png" alt="the-hall" />
+              </a>
+            </li>
+            <li class="link-container">
+              <a class="link" href="projects">Projects</a>
+            </li>
+            <li class="link-container">
+              <a class="link" href="contacts">Contacts</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -50,7 +54,7 @@
           </div>
 
           <button class="header-btn">
-            <span class="btn-text">Look more</span>
+            Look more
             <img
               src="https://img.icons8.com/?size=100&id=99982&format=png&color=FFFFFF"
               alt="arrow-icon"
@@ -198,7 +202,7 @@
         <div class="services-section-content">
           <div class="services-left-content">
             <div class="logo-height">
-            <img src="Images/poly-logo.png" alt="poly-logo" />
+              <img src="Images/poly-logo.png" alt="poly-logo" />
             </div>
             <span>Developpment</span>
             <p>
@@ -224,7 +228,7 @@
           </div>
           <div class="services-middle-content">
             <div class="logo-height">
-            <img src="Images/3d-logo.png" alt="3d-logo" />
+              <img src="Images/3d-logo.png" alt="3d-logo" />
             </div>
             <span>Plan works</span>
             <p>
@@ -279,18 +283,20 @@
           <div class="right-content">
             <div class="label-content">
               <label for="name"></label>
-              <input type="text" id="name" placeholder="Name*" />
+              <input type="text" id="name" placeholder="Name *" />
             </div>
             <div class="label-content">
               <label for="email"></label>
-              <input type="email" id="email" placeholder="Email*" />
+              <input type="email" id="email" placeholder="Email *" />
             </div>
             <div class="label-content">
               <label for="message"></label>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Message*"
+                placeholder="Message *"
+                rows="4"
+                cols="30"
               ></textarea>
             </div>
             <div class="footer-btn">
