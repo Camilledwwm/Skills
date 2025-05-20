@@ -66,7 +66,7 @@ li {
   display: block;
   width: 0%;
   height: 2px;
-  margin-top: 10px;
+  margin-top: 8px;
   background-color: #c9a47e;
   transform: scale(0);
   transition: width 0.7s ease-in-out;
@@ -82,7 +82,7 @@ li {
 }
 
 .link {
-  padding: 12px 24px;
+  padding: 16px 32px;
   display: block;
   text-align: center;
   position: relative;
@@ -91,7 +91,6 @@ li {
 .link-home {
   display: block;
   width: 100%;
-  height: 70px;
 }
 
 a {
@@ -120,7 +119,7 @@ a {
 header h1 {
   font-size: 64px;
   font-weight: 100;
-  line-height: 60px;
+  line-height: 64px;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
@@ -135,8 +134,8 @@ header p {
   display: flex;
   background-color: #c9a47e;
   border-radius: 50px;
-  padding: 10px 20px;
-  gap: 5px;
+  padding: 8px 16px;
+  gap: 4px;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
@@ -197,7 +196,7 @@ h4 {
 
 .mid-text-content {
   border-left: 4px solid #c9a47e;
-  padding-left: 60px;
+  padding-left: 64px;
 }
 
 span {
@@ -250,9 +249,9 @@ main h1 {
 .london {
   position: absolute;
   background-color: #c9a47e;
-  padding: 5px 10px;
+  padding: 4px 8px;
   text-transform: uppercase;
-  left: 20px;
+  left: 16px;
   bottom: -16px;
 }
 
@@ -293,7 +292,7 @@ main h1 {
 
 .title-style {
   color: #c9a47e;
-  line-height: 30px;
+  line-height: 32px;
   text-transform: uppercase;
 }
 
@@ -305,7 +304,7 @@ main h1 {
 
 .date {
   width: fit-content;
-  padding: 5px 10px;
+  padding: 4px 8px;
   background-color: #272727;
   border-radius: 2px;
 }
@@ -328,7 +327,7 @@ main h1 {
 
 .services-left-content img,
 .services-middle-content img {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .services-middle-content img {
@@ -337,8 +336,8 @@ main h1 {
 
 .services-left-content p,
 .services-middle-content p {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 32px;
+  margin-bottom: 32px;
   color: #606060;
   font-weight: 600;
 }
@@ -349,10 +348,10 @@ main h1 {
   color: #c9a47e;
   font-weight: bold;
   text-transform: uppercase;
-  padding-left: 60px;
-  padding-right: 10px;
+  padding-left: 64px;
+  padding-right: 8px;
   letter-spacing: 2px;
-  border-left: 3px solid #c9a47e;
+  border-left: 4px solid #c9a47e;
 }
 
 .services-left-content button:hover,
@@ -370,14 +369,13 @@ main h1 {
 .services-img img {
   border-top: 2px solid #c9a47e;
   border-bottom: 2px solid #c9a47e;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .right-content-text {
   text-align: right;
-  line-height: 20px;
   color: white;
 }
 
@@ -437,12 +435,12 @@ footer {
 input,
 textarea {
   min-width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
   color: #c7c7c7;
   background-color: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.419);
 }
 
 input::placeholder,
@@ -457,7 +455,7 @@ footer button {
   color: white;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 5px 20px;
+  padding: 4px 16px;
   letter-spacing: 2px;
 }
 
