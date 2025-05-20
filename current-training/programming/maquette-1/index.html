@@ -13,24 +13,26 @@
   </head>
 
   <body>
-    <header>
+    <header id="home">
       <section class="header-nav">
         <nav class="nav-menu">
           <ul class="nav-list">
-            <li class="link-container"><a class="link" href="home">Home</a></li>
             <li class="link-container">
-              <a class="link" href="about">About</a>
+              <a class="link" href="#home">Home</a>
+            </li>
+            <li class="link-container">
+              <a class="link" href="#about">About</a>
             </li>
             <li class="logo-container">
-              <a class="link-home" href="#">
+              <a class="link-home" href="#home">
                 <img src="Images/logo_header.png" alt="the-hall" />
               </a>
             </li>
             <li class="link-container">
-              <a class="link" href="projects">Projects</a>
+              <a class="link" href="#projects">Projects</a>
             </li>
             <li class="link-container">
-              <a class="link" href="contacts">Contacts</a>
+              <a class="link" href="#contacts">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -68,7 +70,7 @@
     </header>
 
     <main>
-      <section class="about-hall">
+      <section class="about-hall" id="about">
         <div>
           <h1>
             <span>About</span>
@@ -141,7 +143,7 @@
         </div>
       </section>
 
-      <section class="about-projects">
+      <section class="about-projects" id="projects">
         <h1>
           <span>About</span>
           Projects
@@ -201,7 +203,7 @@
         </h1>
         <div class="services-section-content">
           <div class="services-left-content">
-            <div class="logo-height">
+            <div class="logo-container">
               <img src="Images/poly-logo.png" alt="poly-logo" />
             </div>
             <span>Developpment</span>
@@ -227,24 +229,28 @@
             <button>More</button>
           </div>
           <div class="services-middle-content">
-            <div class="logo-height">
-              <img src="Images/3d-logo.png" alt="3d-logo" />
+            <div class="middle-container">
+              <div class="logo-container">
+                <img src="Images/3d-logo.png" alt="3d-logo" />
+              </div>
+              <span>Plan works</span>
+              <p>
+                Lorem ipsum dolor sit amet
+                <br />
+                consectetur. Posuere leo ultricies
+                <br />
+                senectus quam scelerisque
+                <br />
+                consectetur. Sociis neque
+                <br />
+                pellentesque egestas porta in
+                <br />
+                ultrices vel tellus at.
+              </p>
             </div>
-            <span>Plan works</span>
-            <p>
-              Lorem ipsum dolor sit amet
-              <br />
-              consectetur. Posuere leo ultricies
-              <br />
-              senectus quam scelerisque
-              <br />
-              consectetur. Sociis neque
-              <br />
-              pellentesque egestas porta in
-              <br />
-              ultrices vel tellus at.
-            </p>
-            <button>More</button>
+            <div>
+              <button>More</button>
+            </div>
           </div>
           <div class="services-right-content">
             <div class="services-img">
@@ -271,7 +277,7 @@
     </main>
 
     <form>
-      <footer>
+      <footer id="contacts">
         <section class="footer-content">
           <div class="left-content">
             <h1>
