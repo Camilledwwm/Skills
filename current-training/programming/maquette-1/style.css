@@ -46,7 +46,7 @@ header {
   max-width: var(--container-width);
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 32px;
   justify-content: center;
 }
 
