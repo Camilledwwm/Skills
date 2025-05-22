@@ -167,9 +167,15 @@
           </div>
         </div>
         <div class="main-right">
-          <div class="profile-card">
-            <img class="avatar" src="Images/avatar.jpg" alt="avatar" />
-            <div class="profile-card-content">
+          <div class="profile-card overlay overlay-gold overlay-blur">
+            <div class="profile-card-avatar z-index-element">
+              <img
+                class="avatar z-index-element"
+                src="Images/avatar.jpg"
+                alt="avatar"
+              />
+            </div>
+            <div class="profile-card-content z-index-element">
               <h2>A mon sujet</h2>
               <p>
                 Depuis 2005, je partage mes
@@ -181,7 +187,7 @@
                 les autres.
               </p>
             </div>
-            <div class="profile-card-social-media">
+            <div class="profile-card-social-media z-index-element">
               <img src="Images/Icon-fb.png" alt="facebook" />
               <img src="Images/Icon-pinterest.png" alt="pinterest" />
               <img src="Images/Icon-x.png" alt="twitter" />
@@ -210,14 +216,18 @@
           </div>
 
           <div class="feature-card-top">
-            <p>mes bières</p>
-            <p>préférées</p>
-            <button>Lire plus</button>
+            <div class="feature-card-content">
+              <p>mes bières</p>
+              <p class="text-style">préférées</p>
+              <button>Lire plus</button>
+            </div>
           </div>
           <div class="feature-card-down">
-            <p>l'art</p>
-            <p>du café</p>
-            <button>Lire plus</button>
+            <div class="feature-card-content">
+              <p>l'art</p>
+              <p class="text-style">du café</p>
+              <button>Lire plus</button>
+            </div>
           </div>
         </div>
       </section>
@@ -226,22 +236,34 @@
           <span>Ma galerie photos</span>
         </div>
         <div class="gallery-grid">
-          <img src="Images/burger.jpg" alt="burger" />
-          <img src="Images/gateau.jpg" alt="gateau" />
-          <img src="Images/wrap.jpg" alt="wrap" />
-          <img src="Images/pancakes.jpg" alt="pancakes" />
-          <img src="Images/oeufs.jpg" alt="oeufs" />
-          <img src="Images/saumon.jpg" alt="saumon" />
+          <div class="gallery-image-container">
+            <img src="Images/burger.jpg" alt="burger" />
+          </div>
+          <div class="gallery-image-container">
+            <img src="Images/gateau.jpg" alt="gateau" />
+          </div>
+          <div class="gallery-image-container">
+            <img src="Images/wrap.jpg" alt="wrap" />
+          </div>
+          <div class="gallery-image-container">
+            <img src="Images/pancakes.jpg" alt="pancakes" />
+          </div>
+          <div class="gallery-image-container">
+            <img src="Images/oeufs.jpg" alt="oeufs" />
+          </div>
+          <div class="gallery-image-container">
+            <img src="Images/saumon.jpg" alt="saumon" />
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <section>
+    <footer class="overlay overlay-black">
+      <section class="footer-content z-index-element">
         <div class="footer-logo">
           <img src="Images/logo-footer.png" alt="footer-logo" />
         </div>
       </section>
-      <section>
+      <section class="footer-content z-index-element">
         <nav class="footer-menu">
           <ul class="navbar-menu">
             <li><a class="menu-link" href="#">Brunch</a></li>
