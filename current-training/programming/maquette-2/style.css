@@ -1,7 +1,9 @@
 :root {
-  --main-color: #3f312a;
-  --secondary-color: #b8a292;
+  --main-color: #606060;
+  --secondary-color: #f9c88d;
+  --recipe-bg-color: #c2c581;
   --recipe-text-color: #2d292a;
+  --button-text-color: white;
 
   --space-xs: 4px;
   --space-s: 8px;
@@ -22,9 +24,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(Images/bg-header-adequation.jpg);
+  background-image: url(Images/bg-header-desktop.jpg);
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center;
+  background-size: cover;
   padding: var(--space-xl);
 }
 
@@ -80,34 +83,54 @@ input::placeholder {
 main {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   height: auto;
   align-items: center;
   gap: var(--space-l);
   background-color: var(--main-color);
-  padding: var(--space-l);
 }
 
 .category-section {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-l);
+  margin-bottom: var(--space-l);
+  gap: var(--space-l);
 }
 
-.category-img-container {
-  position: relative;
+.category-img-container-left,
+.category-img-container-middle,
+.category-img-container-right {
+  width: 300px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.category-img-container-left {
+  background-image: url(Images/img-soupes.jpg);
+}
+
+.category-img-container-middle {
+  background-image: url(Images/img-salades.jpg);
+}
+
+.category-img-container-right {
+  background-image: url(Images/img-desserts.jpg);
 }
 
 .category-text {
-  position: absolute;
   border-top: 1px solid var(--secondary-color);
   border-bottom: 1px solid var(--secondary-color);
 }
 
 span {
+  font-size: 24px;
   text-transform: uppercase;
   color: var(--secondary-color);
-  font-size: var(--space-l);
 }
 
 .main-content {
@@ -115,10 +138,10 @@ span {
   flex-direction: column;
   gap: var(--space-m);
   align-items: center;
-  padding: var(--space-l) var(--space-m);
 }
 
-.main-left {
+.main-left,
+.main-right {
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
@@ -126,27 +149,126 @@ span {
 }
 
 .section-title {
+  width: 300px;
+  text-align: center;
   border-top: 1px solid var(--secondary-color);
   border-bottom: 1px solid var(--secondary-color);
 }
 
+.recipe-card {
+  width: 300px;
+  height: auto;
+}
+
+.recipe-card-image {
+  height: 180px;
+}
+
+.recipe-card-image img {
+  height: 100%;
+}
+
 .recipe-card-content {
-  background-color: var(--secondary-color);
+  background-color: var(--recipe-bg-color);
+  text-align: center;
+  padding: var(--space-l);
+}
+
+.recipe-card-content p {
+  margin: var(--space-s);
 }
 
 h2 {
   font-size: var(--space-m);
   text-transform: uppercase;
   color: var(--recipe-text-color);
+  margin-bottom: var(--space-s);
 }
 
 h1 {
   text-transform: uppercase;
   color: var(--main-color);
+  margin-bottom: var(--space-s);
+}
+
+.recipe-card-content button {
+  margin-top: var(--space-m);
+  padding: var(--space-s) var(--space-m);
+  background-color: var(--main-color);
+  border-radius: 2px;
+  color: var(--button-text-color);
+  text-transform: uppercase;
 }
 
 .double-recipe-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-m);
+}
+
+.profile-card {
+  width: 300px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-l);
+  gap: var(--space-m);
+  text-align: center;
+}
+
+.profile-card-social-media {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-s);
+}
+
+.category-sidebar {
+  width: 300px;
+}
+
+.sidebar-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-content p {
+  color: var(--button-text-color);
+}
+
+.feature-card-top,
+.feature-card-down {
+  width: 300px;
+  height: 350px;
+  border: 1px solid var(--secondary-color);
+}
+
+.feature-card-top {
+  background-image: url(Images/bieres.jpg);
+}
+
+.feature-card-down {
+  background-image: url(Images/cafe.jpg);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
   gap: var(--space-m);
 }
 
 /*----- MAIN -----*/
+
+/*----- FOOTER -----*/
+footer {
+  background-image: url(Images/bg-footer.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: var(--space-xl);
+}
+
+.footer-text {
+  text-align: center;
+}
+/*----- FOOTER -----*/
