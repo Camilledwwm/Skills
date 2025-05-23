@@ -38,12 +38,64 @@ body {
 .navbar-container {
   background-color: var(--secondary-color);
   padding: var(--space-l);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamberger-menu-mobile {
+  cursor: pointer;
+  display: block;
+  transition: transform 1s;
+}
+
+.hamberger-menu-mobile .bar {
+  height: 2px;
+  display: block;
+  margin: var(--space-s) 0;
+  background: var(--main-color);
+  width: var(--space-l);
 }
 
 .navbar-menu {
-  display: flex;
+  display: none;
+  position: absolute;
+  bottom: -300px;
+  height: 300px;
+  background: var(--secondary-color);
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  gap: var(--space-s);
+  padding: var(--space-m);
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 0;
+  transform: translateY(-300px);
+}
+#menu-mobile {
+  display: none;
+}
+
+#menu-mobile:checked ~ .hamberger-menu-mobile {
+  transform: rotate(90deg);
+}
+
+#menu-mobile:checked ~ .navbar-menu {
+  display: flex;
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 li {
@@ -458,11 +510,19 @@ footer {
     max-width: 1024px;
     height: auto;
   }
+  .hamberger-menu-mobile {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+    position: initial;
+    flex-direction: row;
+    height: auto;
+  }
 
   .navbar-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-content: center;
   }
 
   main {
@@ -505,6 +565,17 @@ footer {
 @media screen and (min-width: 1025px) {
   body {
     max-width: 100vw;
+  }
+  .hamberger-menu-mobile {
+    display: none;
+  }
+  .navbar-menu {
+    display: flex;
+    position: initial;
+    flex-direction: row;
+    height: auto;
+    opacity: 1;
+    transform: inherit;
   }
 
   .navbar-container {
