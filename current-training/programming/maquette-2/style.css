@@ -44,13 +44,13 @@ body {
   align-items: center;
 }
 
-.hamberger-menu-mobile {
+.hamburger-menu-mobile {
   cursor: pointer;
   display: block;
   transition: transform 1s;
 }
 
-.hamberger-menu-mobile .bar {
+.hamburger-menu-mobile .bar {
   height: 2px;
   display: block;
   margin: var(--space-s) 0;
