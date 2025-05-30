@@ -1,311 +1,273 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <title>Maquette Adéquation</title>
-  </head>
 
-  <body>
-    <header>
-      <section class="header-banner">
-        <div class="header-logo">
-          <img src="Images/logo_header-adequation.png" alt="logo-marque" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+  <title>Maquette Adéquation</title>
+</head>
+
+<body>
+  <header>
+    <section class="header-banner">
+      <div class="header-logo">
+        <img src="Images/logo_header-adequation.png" alt="logo-marque" />
+      </div>
+    </section>
+    <section class="navbar-container">
+      <nav>
+        <input id="menu-mobile" type="checkbox" />
+        <label for="menu-mobile" class="hamburger-menu-mobile">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </label>
+        <ul class="navbar-menu">
+          <li><a class="menu-link" href="#">Brunch</a></li>
+          <li><a class="menu-link" href="#">Sucré</a></li>
+          <li><a class="menu-link" href="#">Salé</a></li>
+          <li><a class="menu-link" href="#">Bio</a></li>
+          <li><a class="menu-link" href="#">Boissons</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar-container">
+        <div class="search-logo-container">
+          <img src="Images/search-logo.png" alt="search-logo" />
         </div>
-      </section>
-      <section class="navbar-container">
-        <nav>
-          <input id="menu-mobile" type="checkbox" />
-          <label for="menu-mobile" class="hamburger-menu-mobile">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </label>
-          <ul class="navbar-menu">
-            <li><a class="menu-link" href="#">Brunch</a></li>
-            <li><a class="menu-link" href="#">Sucré</a></li>
-            <li><a class="menu-link" href="#">Salé</a></li>
-            <li><a class="menu-link" href="#">Bio</a></li>
-            <li><a class="menu-link" href="#">Boissons</a></li>
-          </ul>
-        </nav>
-        <div class="search-bar-container">
-          <div class="search-logo-container">
-            <img src="Images/search-logo.png" alt="search-logo" />
-          </div>
-          <div class="search-bar">
-            <input
-              type="search"
-              id="search"
-              name="search"
-              placeholder="Recherche"
-            />
-          </div>
+        <div class="search-bar">
+          <input type="search" id="search" name="search" placeholder="Recherche" />
         </div>
-      </section>
-    </header>
+      </div>
+    </section>
+  </header>
 
-    <main>
-      <section class="category-section">
-        <div class="category-img-container-left">
-          <div class="category-text">
-            <span>Soupes</span>
-          </div>
+  <main>
+    <section class="category-section">
+      <div class="category-img-container-left">
+        <div class="category-text">
+          <span>Soupes</span>
         </div>
+      </div>
 
-        <div class="category-img-container-middle">
-          <div class="category-text">
-            <span>Salades</span>
-          </div>
+      <div class="category-img-container-middle">
+        <div class="category-text">
+          <span>Salades</span>
         </div>
+      </div>
 
-        <div class="category-img-container-right">
-          <div class="category-text">
-            <span>Desserts</span>
-          </div>
+      <div class="category-img-container-right">
+        <div class="category-text">
+          <span>Desserts</span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="main-content">
-        <div class="main-left">
-          <div class="section-title">
-            <span>Articles récents</span>
-          </div>
-
-          <div class="recipe-card">
-            <div class="recipe-card-image">
-              <img src="Images/tacos.jpg" alt="tacos" />
-            </div>
-            <div class="recipe-card-content">
-              <div class="recipe-card-badge">
-                <img
-                  class="badge-image"
-                  src="Images/toque-badge.png"
-                  alt="badge"
-                />
-              </div>
-              <h2 class="subtitle">Recette</h2>
-              <h1>Chicken tacos</h1>
-              <h2>Par John Doe - 17 mars 2025</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                sodales lobortis quam, ac placerat augue tempor hendrerit. Sed
-                cursus maximus lacus non commodo. Sed aliquam felis in massa
-                tincidunt, sit amet aliquet augue vulputate. Integer aliquam
-                fermentum diam at dictum. Sed vehicula sodales augue in loborti
-              </p>
-              <button>Lire plus</button>
-            </div>
-          </div>
-
-          <div class="double-recipe-card">
-            <div class="recipe-card-secondary">
-              <div class="recipe-card-image">
-                <img src="Images/cote-de-boeuf.jpg" alt="boeuf" />
-              </div>
-              <div class="recipe-card-content">
-                <div class="recipe-card-badge">
-                  <img
-                    class="badge-image"
-                    src="Images/toque-badge.png"
-                    alt="badge"
-                  />
-                </div>
-                <h2 class="subtitle">Recette</h2>
-                <h1>Côte de boeuf</h1>
-                <h2>Par John Doe - 17 mars 2025</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetue adipiscing elit.
-                  Aliquam sodales lobortis quam
-                </p>
-                <button>Lire plus</button>
-              </div>
-            </div>
-
-            <div class="recipe-card-secondary">
-              <div class="recipe-card-image">
-                <img src="Images/carrot-cake.jpg" alt="carrot-cake" />
-              </div>
-              <div class="recipe-card-content">
-                <div class="recipe-card-badge">
-                  <img
-                    class="badge-image"
-                    src="Images/toque-badge.png"
-                    alt="badge"
-                  />
-                </div>
-                <h2 class="subtitle">Recette</h2>
-                <h1>Carrot cake</h1>
-                <h2>Par John Doe - 17 mars 2025</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetue adipiscing elit.
-                  Aliquam sodales lobortis quam
-                </p>
-                <button>Lire plus</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="recipe-card">
-            <div class="recipe-card-image">
-              <img src="Images/cookies.jpg" alt="cookies" />
-            </div>
-            <div class="recipe-card-content">
-              <div class="recipe-card-badge">
-                <img
-                  class="badge-image"
-                  src="Images/toque-badge.png"
-                  alt="badge"
-                />
-              </div>
-              <h2 class="subtitle">Recette</h2>
-              <h1>Cookies sésame</h1>
-              <h2>Par John Doe - 17 mars 2025</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                sodales lobortis quam, ac placerat augue tempor hendrerit. Sed
-                cursus maximus lacus non commodo. Sed aliquam felis in massa
-                tincidunt, sit amet aliquet augue vulputate. Integer aliquam
-                fermentum diam at dictum. Sed vehicula sodales augue in loborti
-              </p>
-              <button>Lire plus</button>
-            </div>
-          </div>
-        </div>
-        <div class="main-right">
-          <div class="section-title">
-            <span>Catégories</span>
-          </div>
-          <div class="profile-card overlay overlay-gold overlay-blur">
-            <div class="profile-card-avatar z-index-element">
-              <img
-                class="avatar z-index-element"
-                src="Images/avatar.jpg"
-                alt="avatar"
-              />
-            </div>
-            <div class="profile-card-content z-index-element">
-              <h2>A mon sujet</h2>
-              <p>
-                Depuis 2005, je partage mes
-                <br />
-                recettes quotidiennes, plus
-                <br />
-                gourmandes les unes que
-                <br />
-                les autres.
-              </p>
-            </div>
-            <div class="profile-card-social-media z-index-element">
-              <img src="Images/Icon-fb.png" alt="facebook" />
-              <img src="Images/Icon-pinterest.png" alt="pinterest" />
-              <img src="Images/Icon-x.png" alt="twitter" />
-              <img src="Images/Icon.png" alt="icone" />
-            </div>
-          </div>
-
-          <div class="category-sidebar">
-            <div class="sidebar-content">
-              <p>Alcool</p>
-              <img
-                class="arrow-sidebar"
-                src="Images/fa6-solid_arrow-up.png"
-                alt="icone-arrow"
-              />
-            </div>
-
-            <div class="sidebar-content">
-              <p>Jus de fruits</p>
-              <img
-                class="arrow-sidebar"
-                src="Images/fa6-solid_arrow-up.png"
-                alt="icone-arrow"
-              />
-            </div>
-
-            <div class="sidebar-content">
-              <p>Vive le bio</p>
-              <img
-                class="arrow-sidebar"
-                src="Images/fa6-solid_arrow-up.png"
-                alt="icone-arrow"
-              />
-            </div>
-          </div>
-          <div class="feature-content">
-            <div class="feature-card-top">
-              <div class="feature-card-content">
-                <p>mes bières</p>
-                <p class="text-style">préférées</p>
-                <button>Lire plus</button>
-              </div>
-            </div>
-            <div class="feature-card-down">
-              <div class="feature-card-content">
-                <p>l'art</p>
-                <p class="text-style">du café</p>
-                <button>Lire plus</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="gallery-section">
+    <section class="main-content">
+      <div class="main-left">
         <div class="section-title">
-          <span>Ma galerie photos</span>
+          <span>Articles récents</span>
         </div>
-        <div class="gallery-grid">
-          <div class="gallery-image-container">
-            <img src="Images/burger.jpg" alt="burger" />
+
+        <div class="recipe-card">
+          <div class="recipe-card-image">
+            <img src="Images/tacos.jpg" alt="tacos" />
           </div>
-          <div class="gallery-image-container">
-            <img src="Images/gateau.jpg" alt="gateau" />
-          </div>
-          <div class="gallery-image-container">
-            <img src="Images/wrap.jpg" alt="wrap" />
-          </div>
-          <div class="gallery-image-container">
-            <img src="Images/pancakes.jpg" alt="pancakes" />
-          </div>
-          <div class="gallery-image-container">
-            <img src="Images/oeufs.jpg" alt="oeufs" />
-          </div>
-          <div class="gallery-image-container">
-            <img src="Images/saumon.jpg" alt="saumon" />
+          <div class="recipe-card-content">
+            <div class="recipe-card-badge">
+              <img class="badge-image" src="Images/toque-badge.png" alt="badge" />
+            </div>
+            <h2 class="subtitle">Recette</h2>
+            <h1>Chicken tacos</h1>
+            <h2>Par John Doe - 17 mars 2025</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              sodales lobortis quam, ac placerat augue tempor hendrerit. Sed
+              cursus maximus lacus non commodo. Sed aliquam felis in massa
+              tincidunt, sit amet aliquet augue vulputate. Integer aliquam
+              fermentum diam at dictum. Sed vehicula sodales augue in loborti
+            </p>
+            <button>Lire plus</button>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="overlay overlay-black">
-      <section class="footer-content z-index-element">
-        <div class="footer-logo">
-          <img src="Images/logo-footer.png" alt="footer-logo" />
+
+        <div class="double-recipe-card">
+          <div class="recipe-card-secondary">
+            <div class="recipe-card-image">
+              <img src="Images/cote-de-boeuf.jpg" alt="boeuf" />
+            </div>
+            <div class="recipe-card-content">
+              <div class="recipe-card-badge">
+                <img class="badge-image" src="Images/toque-badge.png" alt="badge" />
+              </div>
+              <h2 class="subtitle">Recette</h2>
+              <h1>Côte de boeuf</h1>
+              <h2>Par John Doe - 17 mars 2025</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetue adipiscing elit.
+                Aliquam sodales lobortis quam
+              </p>
+              <button>Lire plus</button>
+            </div>
+          </div>
+
+          <div class="recipe-card-secondary">
+            <div class="recipe-card-image">
+              <img src="Images/carrot-cake.jpg" alt="carrot-cake" />
+            </div>
+            <div class="recipe-card-content">
+              <div class="recipe-card-badge">
+                <img class="badge-image" src="Images/toque-badge.png" alt="badge" />
+              </div>
+              <h2 class="subtitle">Recette</h2>
+              <h1>Carrot cake</h1>
+              <h2>Par John Doe - 17 mars 2025</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetue adipiscing elit.
+                Aliquam sodales lobortis quam
+              </p>
+              <button>Lire plus</button>
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="footer-content z-index-element">
-        <nav class="footer-menu">
-          <ul class="navbar-menu">
-            <li><a class="menu-link" href="#">Brunch</a></li>
-            <li><a class="menu-link" href="#">Sucré</a></li>
-            <li><a class="menu-link" href="#">Salé</a></li>
-            <li><a class="menu-link" href="#">Bio</a></li>
-            <li><a class="menu-link" href="#">Boissons</a></li>
-          </ul>
-        </nav>
-        <div class="footer-text">
-          <p>
-            « La gastronomie est l'art d'utiliser la nourriture pour créer le
-            bonheur. Il n'y a rien qui permette de condamner un gastronome, tant
-            qu'il ne va pas jusqu'à l'indigestion »
-          </p>
+
+        <div class="recipe-card">
+          <div class="recipe-card-image">
+            <img src="Images/cookies.jpg" alt="cookies" />
+          </div>
+          <div class="recipe-card-content">
+            <div class="recipe-card-badge">
+              <img class="badge-image" src="Images/toque-badge.png" alt="badge" />
+            </div>
+            <h2 class="subtitle">Recette</h2>
+            <h1>Cookies sésame</h1>
+            <h2>Par John Doe - 17 mars 2025</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              sodales lobortis quam, ac placerat augue tempor hendrerit. Sed
+              cursus maximus lacus non commodo. Sed aliquam felis in massa
+              tincidunt, sit amet aliquet augue vulputate. Integer aliquam
+              fermentum diam at dictum. Sed vehicula sodales augue in loborti
+            </p>
+            <button>Lire plus</button>
+          </div>
         </div>
-      </section>
-    </footer>
-  </body>
+      </div>
+      <div class="main-right">
+
+        <div class="profile-card overlay overlay-gold overlay-blur">
+          <div class="profile-card-avatar z-index-element">
+            <img class="avatar z-index-element" src="Images/avatar.jpg" alt="avatar" />
+          </div>
+          <div class="profile-card-content z-index-element">
+            <h2>A mon sujet</h2>
+            <p>
+              Depuis 2005, je partage mes
+              <br />
+              recettes quotidiennes, plus
+              <br />
+              gourmandes les unes que
+              <br />
+              les autres.
+            </p>
+          </div>
+          <div class="profile-card-social-media z-index-element">
+            <img src="Images/Icon-fb.png" alt="facebook" />
+            <img src="Images/Icon-pinterest.png" alt="pinterest" />
+            <img src="Images/Icon-x.png" alt="twitter" />
+            <img src="Images/Icon.png" alt="icone" />
+          </div>
+        </div>
+        <div class="section-title">
+          <span>Catégories</span>
+        </div>
+        <div class="category-sidebar">
+          <div class="sidebar-content">
+            <p>Alcool</p>
+            <img class="arrow-sidebar" src="Images/fa6-solid_arrow-up.png" alt="icone-arrow" />
+          </div>
+
+          <div class="sidebar-content">
+            <p>Jus de fruits</p>
+            <img class="arrow-sidebar" src="Images/fa6-solid_arrow-up.png" alt="icone-arrow" />
+          </div>
+
+          <div class="sidebar-content">
+            <p>Vive le bio</p>
+            <img class="arrow-sidebar" src="Images/fa6-solid_arrow-up.png" alt="icone-arrow" />
+          </div>
+        </div>
+        <div class="feature-content">
+          <div class="feature-card-top">
+            <div class="feature-card-content">
+              <p>mes bières</p>
+              <p class="text-style">préférées</p>
+              <button>Lire plus</button>
+            </div>
+          </div>
+          <div class="feature-card-down">
+            <div class="feature-card-content">
+              <p>l'art</p>
+              <p class="text-style">du café</p>
+              <button>Lire plus</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="section-title">
+        <span>Ma galerie photos</span>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-image-container">
+          <img src="Images/burger.jpg" alt="burger" />
+        </div>
+        <div class="gallery-image-container">
+          <img src="Images/gateau.jpg" alt="gateau" />
+        </div>
+        <div class="gallery-image-container">
+          <img src="Images/wrap.jpg" alt="wrap" />
+        </div>
+        <div class="gallery-image-container">
+          <img src="Images/pancakes.jpg" alt="pancakes" />
+        </div>
+        <div class="gallery-image-container">
+          <img src="Images/oeufs.jpg" alt="oeufs" />
+        </div>
+        <div class="gallery-image-container">
+          <img src="Images/saumon.jpg" alt="saumon" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="overlay overlay-black">
+    <section class="footer-content z-index-element">
+      <div class="footer-logo">
+        <img src="Images/logo-footer.png" alt="footer-logo" />
+      </div>
+    </section>
+    <section class="footer-content z-index-element">
+      <nav class="footer-menu">
+        <ul class="navbar-menu">
+          <li><a class="menu-link" href="#">Brunch</a></li>
+          <li><a class="menu-link" href="#">Sucré</a></li>
+          <li><a class="menu-link" href="#">Salé</a></li>
+          <li><a class="menu-link" href="#">Bio</a></li>
+          <li><a class="menu-link" href="#">Boissons</a></li>
+        </ul>
+      </nav>
+      <div class="footer-text">
+        <p>
+          « La gastronomie est l'art d'utiliser la nourriture pour créer le
+          bonheur. Il n'y a rien qui permette de condamner un gastronome, tant
+          qu'il ne va pas jusqu'à l'indigestion »
+        </p>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
