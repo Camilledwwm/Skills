@@ -1,0 +1,22 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'League Script', cursive;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: center;
+}
+
+h1 {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+  background-color: aqua;
+  border: 1px solid black;
+  justify-content: center;
+}
