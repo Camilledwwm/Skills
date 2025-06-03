@@ -1,8 +1,9 @@
 // Grille de base
 const board = document.getElementById('board');
 const cells = document.querySelectorAll('.cell');
-const announce = document.querySelector('.announce');
 //
+const announce = document.querySelector('.announce');
+
 let currentPlayer = 'X';
 
 // Constante des victoires
@@ -30,7 +31,7 @@ function checkWin() {
 
 // Fonction du match nul pour vérifier que toutes les cellules sont remplies ET de signes différents
 function checkDraw() {
-  return cells.every((cell) => cell.textContent !== '');
+  return [...cells].every((cell) => cell.textContent !== ''); // ( ... ) permet d'avoir un tableau
 }
 
 // Fonction pour passer du X au O alternativement
@@ -53,8 +54,10 @@ function handleClick(event) {
   cell.textContent = currentPlayer;
   if (checkWin()) {
     announce.textContent = currentPlayer + ' a gagné !';
+    board.removeEventListener('click', handleClick);
   } else if (checkDraw()) {
     announce.textContent = 'Match nul';
+    board.removeEventListener('click', handleClick);
   } else {
     switchPlayer();
   }
