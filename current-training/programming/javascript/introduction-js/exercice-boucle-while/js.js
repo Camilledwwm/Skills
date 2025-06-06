@@ -1,37 +1,37 @@
-/* Demandez à l'utilisateur de deviner un nombre entre 1 et 100. */
-/* Utilisez une boucle while pour permettre à l'utilisateur de saisir des nombres jusqu'à ce qu'il devine correctement. */
+// Demandez à l'utilisateur de deviner un nombre entre 1 et 100.
+// Utilisez une boucle while pour permettre à l'utilisateur de saisir des nombres jusqu'à ce qu'il devine correctement.
 
-// const nombreATrouver = 33;
-// let tentative;
+const nombreATrouver = 33;
+let tentative;
 
-// while (tentative !== nombreATrouver) {
-//   tentative = parseInt(prompt('Devinez un nombre en 1 et 100'));
-//   console.log(tentative);
+while (tentative !== nombreATrouver) {
+  tentative = parseInt(prompt('Devinez un nombre en 1 et 100'));
+  console.log(tentative);
 
-//   if (tentative < nombreATrouver) {
-//     console.log("C'est plus grand !");
-//   } else if (tentative > nombreATrouver) {
-//     console.log("C'est plus petit !");
-//   } else {
-//     console.log('Bravo, vous avez trouvé !');
-//   }
-// }
+  if (tentative < nombreATrouver) {
+    console.log("C'est plus grand !");
+  } else if (tentative > nombreATrouver) {
+    console.log("C'est plus petit !");
+  } else {
+    console.log('Bravo, vous avez trouvé !');
+  }
+}
 
 // Résultat attendu de l'exercice sans ajout :
 
-// let nombreADeviner = 66;
-// let nombreEntre;
-// while (nombreEntre !== nombreADeviner) {
-//   nombreEntre = parseInt(prompt('entrez un nombre'));
-// }
+let nombreADeviner = 66;
+let nombreEntre;
+while (nombreEntre !== nombreADeviner) {
+  nombreEntre = parseInt(prompt('entrez un nombre'));
+}
 
 // Afficher les nombres de 1 à 10 :
 
-// let nombre = 1;
+let nombre = 1;
 
-// while (nombre <= 10) {
-//   console.log(nombre++);
-// }
+while (nombre <= 10) {
+  console.log(nombre++);
+}
 
 // Calculer la somme des nombres de 1 à 100 :
 
