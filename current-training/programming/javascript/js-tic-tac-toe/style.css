@@ -18,25 +18,22 @@ h1 {
   flex-wrap: wrap;
   width: 300px;
   height: 300px;
-  border: 3px solid #333;
+  border: 3px solid #000000;
 }
 
 .case {
   width: 100px;
   height: 100px;
   box-sizing: border-box;
-  border: 1px solid #333;
+  border: 1px solid #000000;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-size: 2.5em;
   cursor: pointer;
   background-color: white;
   transition: background-color 0.3s;
-}
-
-.case:hover {
-  background-color: #eee;
 }
 
 #message {
