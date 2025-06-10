@@ -35,13 +35,13 @@ while (nombre <= 10) {
 
 // Calculer la somme des nombres de 1 à 100 :
 
-let chiffre = 1;
-let calcul = 0;
+let chiffreUn = 1;
+let calculUn = 0;
 
-while (chiffre < 100) {
-  calcul = calcul + chiffre;
-  chiffre++;
-  console.log(calcul);
+while (chiffreUn < 100) {
+  calculUn = calculUn + chiffreUn;
+  chiffreUn++;
+  console.log(calculUn);
 }
 
 // ou
