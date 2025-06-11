@@ -4,6 +4,6 @@
 const bouton = document.querySelector('button');
 const p = document.querySelector('p');
 
-bouton.addEventListener('click', (event) => {
-  p.textContent = 'Hello word !';
+bouton.addEventListener('click', () => {
+  p.textContent = 'Hello world !';
 });
