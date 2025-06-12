@@ -16,7 +16,7 @@ h1 {
 }
 
 .game-board {
-  max-width: 500px;
+  max-width: 700px;
   display: grid;
   grid-template-rows: repeat(3, 200px);
   gap: 40px;
@@ -104,8 +104,13 @@ h1 {
 .word-container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+  padding-top: 50px;
+  color: purple;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 36px;
 }
 
 .keyboard {
@@ -117,10 +122,10 @@ h1 {
 }
 
 .alphabet {
+  max-width: 500px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-
+  justify-content: center;
   gap: 10px;
   font-size: 24px;
 }
@@ -133,6 +138,6 @@ h1 {
   height: 40px;
   border: 1px solid purple;
   border-radius: 6px;
-  box-shadow: 2px 2px 2px;
+  box-shadow: 2px 2px 2px rgb(167, 90, 167);
   color: purple;
 }
