@@ -70,8 +70,32 @@ afficherMot();
 // Partie clavier + vérification lettre :
 const lettresClavier = document.querySelectorAll('.letter');
 
+function verifierLettre(lettre) {
+  let lettreTrouvée = false;
+
+  for (let i = 0; i < motSecret.length; i++) {
+    if (motSecret[i] === lettre) {
+      lettresTrouvées[i] = lettre;
+      lettreTrouvée = true;
+    }
+    if (lettreTrouvée) {
+    } else {
+      tentativesRestantes--;
+      //   console.log('Raté ! Tentatives restantes :', tentativesRestantes);
+    }
+  }
+}
+
 lettresClavier.forEach((element) => {
   element.addEventListener('click', (event) => {
-    const lettreCliquée = element.textContent;
+    const lettreCliquée = event.target.textContent;
+    verifierLettre(lettreCliquée);
+    afficherMot();
+
+    event.target.style.cursor = 'not-allowed';
+    event.target.style.backgroundColor = 'grey';
+    event.target.style.color = 'rgb(94, 94, 94)';
+    event.target.style.boxShadow = 'none';
+    event.target.style.opacity = '0.6';
   });
 });

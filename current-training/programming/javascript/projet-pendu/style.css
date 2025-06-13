@@ -1,7 +1,8 @@
 body {
-  max-height: 100vh;
-  max-width: 100vw;
-  background-color: pink;
+  background-image: url(https://img.freepik.com/vecteurs-premium/art-mural-botanique-mode-lavande-modele-concept-pour-cartes-voeux-banniere-medias-sociaux_715072-1028.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
@@ -10,10 +11,10 @@ body {
 }
 
 h1 {
-  font-family: 'Send Flowers', cursive;
-  margin-bottom: 100px;
-  color: purple;
-  font-size: 48px;
+  font-family: 'Borel', cursive;
+  margin-bottom: 80px;
+  color: #708a5f;
+  font-size: 40px;
 }
 
 .game-board {
@@ -35,9 +36,9 @@ h1 {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: rgb(238, 238, 134);
-  border: 1px solid rgb(141, 141, 0);
-  box-shadow: 2px 2px 2px rgb(141, 141, 0);
+  background-color: #839c6b;
+  border: 1px solid #505f42;
+  box-shadow: 2px 2px 2px #505f42;
   z-index: 1;
 }
 
@@ -47,10 +48,10 @@ h1 {
   height: 55px;
   margin-left: 150px;
   margin-top: 30px;
-  background-color: rgb(247, 237, 247);
-  box-shadow: 2px 2px 2px rgb(252, 236, 252);
+  background-color: #866fa2;
+  box-shadow: 2px 2px 2px rgb(73, 2, 73);
   border-radius: 50%;
-  border: 1px solid rgb(73, 2, 73);
+  border: 1px solid #c5b4d3;
   transform-origin: 0% 20%;
 }
 
@@ -111,8 +112,7 @@ h1 {
   color: rgb(167, 90, 167);
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 36px;
-  letter-spacing: 5px;
+  font-size: 52px;
 }
 
 .keyboard {
@@ -120,8 +120,10 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 2px solid rgb(167, 90, 167);
-  border-bottom: 2px solid rgb(167, 90, 167);
+  background-color: #d1bedc;
+  border: 2px solid #b5a0be;
+  box-shadow: 2px 2px 2px #b5a0be;
+  border-radius: 6px;
 }
 
 .alphabet {
@@ -139,7 +141,7 @@ h1 {
   align-items: center;
   width: 40px;
   height: 40px;
-  border: 1px solid purple;
+  border: 1px solid #b5a0be;
   border-radius: 6px;
   box-shadow: 2px 2px 2px rgb(167, 90, 167);
   color: purple;
@@ -148,16 +150,18 @@ h1 {
 
 button {
   max-width: fit-content;
+  height: 50px;
+  overflow: hidden;
   margin-top: 25px;
-  border: 1px solid purple;
-  box-shadow: 2px 2px 2px white;
+  font-family: 'Borel', cursive;
+  border: 1px solid #b5a0be;
+  box-shadow: 2px 2px 2px #b5a0be;
   border-radius: 6px;
-  color: rgb(167, 90, 167);
-  font-size: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
+  color: purple;
+  font-size: 24px;
+  /* font-weight: bold; */
   padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 5px; */
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
