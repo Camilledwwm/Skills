@@ -1,0 +1,44 @@
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.navbar {
+  width: 200px;
+  z-index: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgb(141, 221, 194);
+  box-shadow: 4px 4px 4px rgb(92, 145, 127);
+  border: 1px solid rgb(92, 145, 127);
+  border-radius: 15px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.burger-icon {
+  cursor: pointer;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: #818181;
+  margin: 6px 0;
+  border-radius: 3px;
+}
