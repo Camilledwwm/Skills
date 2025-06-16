@@ -1,5 +1,5 @@
 :root {
-  --main-color: rgb(167, 90, 167);
+  --main-color: #a75aa7;
   --secondaery-color: #d1bedc;
   --shadow-color: #b5a0be;
   --alternate-color: #708a5f;
@@ -45,9 +45,9 @@ h1 {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #d1bedc;
-  border: 1px solid #a75aa7;
-  box-shadow: 2px 2px 2px #a75aa7;
+  background-color: #a75aa7;
+  border: 1px solid #800080;
+  box-shadow: 2px 2px 2px #800080;
   z-index: 1;
 }
 
@@ -57,16 +57,10 @@ h1 {
   height: 55px;
   margin-left: 150px;
   margin-top: 30px;
-  background: PURPLE;
-  background: linear-gradient(
-    90deg,
-    purple 0%,
-    rgba(167, 90, 167, 1) 35%,
-    rgba(209, 190, 220, 1) 100%
-  );
-  box-shadow: 2px 2px 2px #a75aa7;
+  background-color: #c9bada;
+  box-shadow: 2px 2px 2px #800080;
   border-radius: 50%;
-  border: 1px solid #a75aa7;
+  border: 1px solid #800080;
   transform-origin: 0% 20%;
 }
 
@@ -130,7 +124,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   padding-top: 50px;
-  color: rgb(167, 90, 167);
+  color: #a75aa7;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 52px;
@@ -175,8 +169,8 @@ span {
   height: 40px;
   border: 1px solid #b5a0be;
   border-radius: 6px;
-  box-shadow: 2px 2px 2px rgb(167, 90, 167);
-  color: purple;
+  box-shadow: 2px 2px 2px #a75aa7;
+  color: #800080;
   cursor: pointer;
 }
 
@@ -194,7 +188,7 @@ button {
   font-family: 'Borel', cursive;
   border: 2px solid #b5a0be;
   border-radius: 6px;
-  color: rgba(167, 90, 167, 1);
+  color: #a75aa7;
   font-weight: bold;
   font-size: 24px;
   padding-top: 10px;
@@ -206,6 +200,6 @@ button {
 button:hover {
   font-style: italic;
   color: #d1bedc;
-  background-color: rgba(167, 90, 167, 1);
-  border-color: rgba(167, 90, 167, 1);
+  background-color: #a75aa7;
+  border-color: #a75aa7;
 }
