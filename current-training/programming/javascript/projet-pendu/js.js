@@ -144,7 +144,7 @@ function redemarrerJeu() {
   lettresTrouvées = Array(motSecret.length).fill('_');
   tentativesRestantes = 6;
   erreurs = 0;
-
+  jeuTerminé = false;
   afficherMot();
 
   // Réinitialise les pétales

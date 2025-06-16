@@ -1,3 +1,12 @@
+:root {
+  --main-color: rgb(167, 90, 167);
+  --secondaery-color: #d1bedc;
+  --shadow-color: #b5a0be;
+  --alternate-color: #708a5f;
+
+  --main-font: 'Borel', cursive;
+}
+
 body {
   background-image: url(https://img.freepik.com/vecteurs-premium/art-mural-botanique-mode-lavande-modele-concept-pour-cartes-voeux-banniere-medias-sociaux_715072-1028.jpg);
   background-position: center;
@@ -18,7 +27,7 @@ h1 {
 }
 
 .game-board {
-  width: 800px;
+  width: 750px;
   display: grid;
   grid-template-rows: repeat(3, 200px);
   gap: 30px;
@@ -36,9 +45,9 @@ h1 {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #839c6b;
-  border: 1px solid #505f42;
-  box-shadow: 2px 2px 2px #505f42;
+  background-color: #d1bedc;
+  border: 1px solid #a75aa7;
+  box-shadow: 2px 2px 2px #a75aa7;
   z-index: 1;
 }
 
@@ -48,10 +57,16 @@ h1 {
   height: 55px;
   margin-left: 150px;
   margin-top: 30px;
-  background-color: #866fa2;
-  box-shadow: 2px 2px 2px rgb(73, 2, 73);
+  background: PURPLE;
+  background: linear-gradient(
+    90deg,
+    purple 0%,
+    rgba(167, 90, 167, 1) 35%,
+    rgba(209, 190, 220, 1) 100%
+  );
+  box-shadow: 2px 2px 2px #a75aa7;
   border-radius: 50%;
-  border: 1px solid #c5b4d3;
+  border: 1px solid #a75aa7;
   transform-origin: 0% 20%;
 }
 
@@ -128,6 +143,7 @@ span {
 }
 
 #word {
+  font-family: 'Borel', cursive;
   color: #839c6b;
 }
 
@@ -165,6 +181,7 @@ span {
 }
 
 .letter:hover {
+  color: #b5a0be;
   border: 2px solid #9d87a7;
   box-shadow: 2px 2px 2px #9d87a7;
 }
@@ -175,10 +192,10 @@ button {
   overflow: hidden;
   margin-top: 25px;
   font-family: 'Borel', cursive;
-  border: 1px solid #b5a0be;
-  box-shadow: 2px 2px 2px #b5a0be;
+  border: 2px solid #b5a0be;
   border-radius: 6px;
-  color: purple;
+  color: rgba(167, 90, 167, 1);
+  font-weight: bold;
   font-size: 24px;
   padding-top: 10px;
   padding-left: 10px;
@@ -188,7 +205,7 @@ button {
 
 button:hover {
   font-style: italic;
-  color: rgb(73, 2, 73);
-  background-color: #d1bedc;
-  border-color: rgb(73, 2, 73);
+  color: #d1bedc;
+  background-color: rgba(167, 90, 167, 1);
+  border-color: rgba(167, 90, 167, 1);
 }
