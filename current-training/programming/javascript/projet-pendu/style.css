@@ -103,16 +103,32 @@ h1 {
   transform: rotate(330deg);
 }
 
+.petal.fall {
+  transform: translateY(200px) rotate(720deg);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
 .word-container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   padding-top: 50px;
   color: rgb(167, 90, 167);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 52px;
+}
+
+span {
+  font-family: 'Borel', cursive;
+  text-transform: none;
+  font-size: 24px;
+}
+
+#word {
+  color: #839c6b;
 }
 
 .keyboard {
@@ -148,6 +164,11 @@ h1 {
   cursor: pointer;
 }
 
+.letter:hover {
+  border: 2px solid #9d87a7;
+  box-shadow: 2px 2px 2px #9d87a7;
+}
+
 button {
   max-width: fit-content;
   height: 50px;
@@ -159,10 +180,15 @@ button {
   border-radius: 6px;
   color: purple;
   font-size: 24px;
-  /* font-weight: bold; */
   padding-top: 10px;
-  /* padding-bottom: 5px; */
   padding-left: 10px;
   padding-right: 10px;
   cursor: pointer;
+}
+
+button:hover {
+  font-style: italic;
+  color: rgb(73, 2, 73);
+  background-color: #d1bedc;
+  border-color: rgb(73, 2, 73);
 }
