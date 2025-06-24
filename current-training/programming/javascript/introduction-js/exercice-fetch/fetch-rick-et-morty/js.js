@@ -2,8 +2,9 @@
 
 const personnages = document.getElementById('personnages');
 
-for (let page = 1; page <= 42; page++) {
-  fetch(`https://rickandmortyapi.com/api/character/?page=${page}`) // Prends l'url de l'API Rick & Morty sur toutes les pages
+for (let i = 1; i <= 42; i++) {
+  // Boucle pour les 42 pages
+  fetch(`https://rickandmortyapi.com/api/character/?page=${i}`) // Prends l'url de l'API Rick & Morty sur toutes les pages
     .then((response) => response.json()) // Puis répond
     .then((data) => {
       // Puis pour chaque personnage, affiche
