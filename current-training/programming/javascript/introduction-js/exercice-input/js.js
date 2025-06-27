@@ -55,8 +55,10 @@ function générerMotDePasse() {
 
     let password = '';
 
-    for (let i = 0; i < length; i++) {}
+    for (let i = 0; i <= length; i++) {}
   });
 }
 
 générerMotDePasse();
+
+// Pas terminé - correction sur Discord
